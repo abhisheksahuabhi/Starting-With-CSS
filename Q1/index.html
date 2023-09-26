@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting with CSS</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- internal CSS -->
+    <style>
+        .title{
+            color:yellow;
+        }
+        .details2{
+            color: goldenrod;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        Inline CSS has more priority than internal and internal has more priority than external
+        i.e Inline > Internal > External
+    -->
+    <!-- Inline CSS -->
+    <div class="title" id="cssTitle" style="color: red;">
+        <h1>Welcome to CSS practice</h1>
+    </div>
+
+    <!-- Here using id to set the external css  -->
+    <div class="details1" id="description1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Eaque nobis at repellendus, dolores magnam voluptatum quisquam quibusdam, 
+           vitae beatae est aliquid inventore a voluptate quia explicabo consequuntur earum doloremque dignissimos!
+        </p>
+    </div>
+
+    <!-- Here using class to set the internal css -->
+    <div class="details2" id="description2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Eaque nobis at repellendus, dolores magnam voluptatum quisquam quibusdam, 
+           vitae beatae est aliquid inventore a voluptate quia explicabo consequuntur earum doloremque dignissimos!
+        </p>
+    </div>
+    
+   
+</body>
+</html>

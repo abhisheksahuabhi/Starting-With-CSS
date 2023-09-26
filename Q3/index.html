@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form with CSS</title>
+    <style>
+        /* Custom color palette */
+        :root {
+            --primary-bg-color: #51a6de;
+            --secondary-bg-color: #d8e159;
+            --text-color: #ffffff;
+            --input-bg-color: #f2f2f2;
+            --opacity-bg-color: rgba(52, 152, 219, 0.5);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--primary-bg-color);
+        }
+        /* Style the form container */
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--secondary-bg-color);
+            border-radius: 10px;
+            opacity: 0.9; /* Applying opacity to the form container */
+        }
+        /* Style form elements */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: var(--input-bg-color);
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: var(--primary-bg-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Style form labels */
+        label {
+            color: var(--text-color);
+        }
+        .div-flex{
+            display: flex;
+        }
+        .div-flex label{
+            margin-right: 50px;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    
+    <div class="form-container">
+        <h2 style="text-align: center;">HTML Forms with CSS Design</h2>
+
+   <div style="text-align: center;">
+    <form>
+        <div class="div-flex">  
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter the firstname"><br>
+        </div>
+        <div class="div-flex">
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter the surname"><br>
+        </div>
+        <div class="div-flex">
+        <label for="contact">Contact No:</label><br>
+        <input type="text" id="contact" name="contact" placeholder="Enter the contact number"><br>
+        </div>
+        
+        <input type="submit" value="Submit" style="text-align: center;">
+        
+    </form> 
+    </div>
+ 
+   </div>
+   
+</body>
+</html>
